@@ -6,7 +6,7 @@ import MoreProjects from "./pages/MoreProjects";
 function App() {
   return (
     <>
-      <div className="">
+      <div className="font-roboto">
         <Router>
           <Routes>
             <Route path="/" element={<Main />}></Route>
