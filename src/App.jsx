@@ -1,9 +1,22 @@
 import React from "react";
-
-import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Main from "./pages/MainPage";
+import MoreProjects from "./pages/MoreProjects";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <div className="">
+        <Router>
+          <Routes>
+            <Route path="/" element={<Main />}></Route>
+            <Route path="/projects" element={<MoreProjects />}></Route>
+            {/* <Route path="/certificates" element={<MoreCerts />}></Route> */}
+          </Routes>
+        </Router>
+      </div>
+    </>
+  );
 }
 
 export default App;
