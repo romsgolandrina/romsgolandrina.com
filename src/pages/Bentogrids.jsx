@@ -4,16 +4,20 @@ import {
   LuBookOpenText,
   LuBriefcaseBusiness,
   LuCoffee,
+  LuAward,
+  LuPhone,
 } from "react-icons/lu";
 import TechBadges from "./TechStack";
 import ExperienceTimeline from "./ExperienceTimeline";
 import Projects from "./Projects";
 import { Link } from "react-router-dom";
+import Certificates from "./Certificates";
+import Contact from "./Contact";
 
 const Bentogrids = () => {
   return (
     <div className="w-full h-auto flex flex-col gap-4">
-      <div className="w-full h-[600px] flex flex-row gap-4">
+      <div className="w-full h-[595px] flex flex-row gap-4">
         <div className="w-[65%] h-full flex flex-col gap-4">
           {/*About*/}
           <div className="w-full h-[68%] bg-base-100 border-1 border-base-300 rounded-xl shadow-sm hover:shadow-md transition-shadow dark:bg-base-200 flex flex-col gap-3 px-6 py-4">
@@ -102,11 +106,24 @@ const Bentogrids = () => {
         <Projects />
       </div>
       {/* Contacts & Certificates */}
-      <div className="w-full h-[400px] bg-base-100 border-1 border-base-300 rounded-xl shadow-sm hover:shadow-md transition-shadow dark:bg-base-200 flex flex-row gap-3">
+      <div className="w-full h-[400px] flex flex-row gap-3">
+        {/* Certificate */}
+        <div className="w-[32%] h-full bg-base-100 border-1 border-base-300 rounded-xl shadow-sm hover:shadow-md transition-shadow dark:bg-base-200 flex flex-col px-6 py-4 gap-3">
+          <div className="w-full flex flex-row items-center gap-2">
+            <LuAward size={18} />
+            <span className="text-2xl font-semibold">Certificates</span>
+          </div>
+          <Certificates />
+        </div>
+
         {/* Contact */}
-        <div className=""></div>
-        {/* Certificates */}
-        <div className=""></div>
+        <div className="w-[68%] h-full bg-base-100 border-1 border-base-300 rounded-xl shadow-sm hover:shadow-md transition-shadow dark:bg-base-200 flex flex-col px-6 py-4">
+          <div className="w-full flex flex-row items-center gap-2">
+            <LuPhone size={18} />
+            <span className="text-2xl font-semibold">Connect</span>
+          </div>
+          <Contact />
+        </div>
       </div>
     </div>
   );
