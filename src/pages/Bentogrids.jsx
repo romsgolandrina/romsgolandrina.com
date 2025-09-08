@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react";
 import {
   LuShoppingBag,
   LuBookOpenText,
@@ -21,11 +22,23 @@ const Bentogrids = () => {
         <div className="w-[65%] h-full flex flex-col gap-4">
           {/*About*/}
           <div className="w-full h-[68%] bg-base-100 border-1 border-base-300 rounded-xl shadow-sm hover:shadow-md transition-shadow dark:bg-base-200 flex flex-col gap-3 px-6 py-4">
-            <div className="w-full flex flex-row items-center gap-2">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.15 }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="w-full flex flex-row items-center gap-2"
+            >
               <LuShoppingBag size={18} />
-              <spa className="text-2xl font-semibold">About</spa>
-            </div>
-            <div className="text-sm leading-[22px]">
+              <span className="text-2xl font-semibold">About</span>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="text-sm leading-[22px]"
+            >
               I’m a Front-end Developer, an Information Technology graduate from
               the Technological Institute of the Philippines – Quezon City. My
               focus is on web development, where I’ve worked with technologies
@@ -44,36 +57,68 @@ const Bentogrids = () => {
               development. Looking ahead, I’m interested in expanding my
               knowledge in backend frameworks like Laravel and exploring cloud
               technologies to deploy scalable applications
-            </div>
+            </motion.div>
           </div>
           {/*Tech Stack*/}
           <div className="w-full h-[32%] bg-base-100 border-1 border-base-300 rounded-xl shadow-sm hover:shadow-md transition-shadow dark:bg-base-200 flex flex-col px-6 py-4 gap-3">
-            <h1 className="flex flex-row gap-2 items-center">
+            <motion.h1
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.15 }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="flex flex-row gap-2 items-center"
+            >
               <LuBookOpenText size={18} />
               <span className="text-2xl font-semibold">Tech Stack</span>
-            </h1>
-            <div className="w-full">
+            </motion.h1>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="w-full"
+            >
               <TechBadges />
-            </div>
+            </motion.div>
           </div>
         </div>
         {/*Experience*/}
         <div className="w-[35%] h-full bg-base-100 border-1 border-base-300 rounded-xl shadow-sm hover:shadow-md transition-shadow dark:bg-base-200 flex flex-col px-6 py-4">
-          <div className="w-full flex flex-row gap-2 items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="w-full flex flex-row gap-2 items-center"
+          >
             <LuBriefcaseBusiness size={18} />
             <span className="text-2xl font-semibold">Experience</span>
-          </div>
-          <ExperienceTimeline />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="w-full"
+          >
+            <ExperienceTimeline />
+          </motion.div>
         </div>
       </div>
       {/* Projects */}
       <div className="w-full h-[500px] bg-base-100 border-1 border-base-300 rounded-xl shadow-sm hover:shadow-md transition-shadow dark:bg-base-200 flex flex-col px-6 py-4 gap-3">
-        <div className="w-full flex flex-row items-center justify-between">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.15 }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="w-full flex flex-row items-center justify-between"
+        >
           <div className="flex flex-row items-center gap-2">
             <LuCoffee size={18} />
             <span className="text-2xl font-semibold">Projects</span>
           </div>
-          <Link
+          {/* <Link
             to="projects"
             className="flex flex-row justify-end items-center gap-1 cursor-pointer group"
           >
@@ -101,28 +146,64 @@ const Bentogrids = () => {
                 stroke-linejoin="round"
               />
             </svg>
-          </Link>
-        </div>
-        <Projects />
+          </Link> */}
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
+          className="w-full"
+        >
+          <Projects />
+        </motion.div>
       </div>
       {/* Contacts & Certificates */}
-      <div className="w-full h-[470px] flex flex-row gap-3">
+      <div className="w-full h-[430px] flex flex-row gap-3">
         {/* Certificate */}
         <div className="w-[32%] h-full bg-base-100 border-1 border-base-300 rounded-xl shadow-sm hover:shadow-md transition-shadow dark:bg-base-200 flex flex-col px-6 py-4 gap-3">
-          <div className="w-full flex flex-row items-center gap-2">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="w-full flex flex-row items-center gap-2"
+          >
             <LuAward size={18} />
             <span className="text-2xl font-semibold">Certificates</span>
-          </div>
-          <Certificates />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="w-full"
+          >
+            <Certificates />
+          </motion.div>
         </div>
 
         {/* Contact */}
         <div className="w-[68%] h-full bg-base-100 border-1 border-base-300 rounded-xl shadow-sm hover:shadow-md transition-shadow dark:bg-base-200 flex flex-col px-6 py-4 gap-3">
-          <div className="w-full flex flex-row items-center gap-2">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="w-full flex flex-row items-center gap-2"
+          >
             <LuPhone size={18} />
             <span className="text-2xl font-semibold">Connect</span>
-          </div>
-          <Contact />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="w-full"
+          >
+            <Contact />
+          </motion.div>
         </div>
       </div>
     </div>
