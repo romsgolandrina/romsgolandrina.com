@@ -2,15 +2,15 @@ import React from "react";
 import profile from "../assets/files/roms.jpg";
 import verified from "../assets/logo/verified.svg";
 import { LuMapPin, LuMail, LuDownload } from "react-icons/lu";
-import Logos from "./Logos";
+import Bentogrids from "./Bentogrids";
 
 const MainPage = ({ theme, setTheme }) => {
   return (
     <div className="max-w-screen-lg mx-auto py-8 transition-all duration-500 ease-in-out">
-      <div className="w-full flex flex-col">
+      <div className="w-full flex flex-col gap-4">
         <div className="w-full h-auto flex flex-row gap-4 items-center">
           {/* Profile Picture */}
-          <div className="w-[18%]">
+          <div className="w-[19%]">
             <img
               src={profile}
               alt="my_picture"
@@ -84,11 +84,11 @@ const MainPage = ({ theme, setTheme }) => {
                 Enthusiast
               </h1>
               <div className="flex flex-row gap-2">
-                <button className="btn btn-sm w-36 bg-blue-400 flex items-center border-blue-400 dark:text-white transform transition-transform duration-300 ease-in-out hover:-translate-y-0.5">
+                <button className="btn btn-sm w-36 shadow-sm rounded-md bg-blue-400 flex items-center border-blue-400 dark:text-white transform transition-transform duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-md">
                   <LuMail size={18} />
                   <span>Send Mail</span>
                 </button>
-                <button className="btn btn-sm w-36 flex items-center bg-transparent border-neutral-400 transform transition-transform duration-300 ease-in-out hover:-translate-y-0.5">
+                <button className="btn btn-sm w-36 shadow-sm rounded-md flex items-center bg-transparent border-1 border-neutral-400 transform transition-transform duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-md">
                   <LuDownload size={18} />
                   <span>Resume</span>
                 </button>
@@ -96,9 +96,9 @@ const MainPage = ({ theme, setTheme }) => {
             </div>
           </div>
         </div>
-        {/* Tech Stack */}
-        <div className="w-full">
-          <Logos />
+        {/* Bento Grids */}
+        <div>
+          <Bentogrids />
         </div>
       </div>
     </div>
