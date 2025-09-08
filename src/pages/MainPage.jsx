@@ -7,7 +7,7 @@ import resumepdf from "../assets/files/Jhon-Rommel-Golandrina_RESUME-2025.pdf";
 
 const MainPage = ({ theme, setTheme }) => {
   return (
-    <div className="max-w-screen-lg mx-auto py-8 transition-all duration-500 ease-in-out">
+    <div className="max-w-screen-lg mx-auto py-8 transition-all duration-500 ease-in-out lg:px-4">
       <div className="w-full flex flex-col gap-8">
         <div className="w-full h-auto flex flex-row gap-4 items-center">
           {/* Profile Picture */}
