@@ -20,7 +20,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="w-full h-full flex flex-col gap-4">
+    <div className="w-full h-auto flex flex-col gap-4">
       <h1 className="text-sm font-semibold">
         I'm currently looking for job opportunities. If you have any suggestions
         or feedback, I’d be happy to hear from you!
@@ -44,17 +44,15 @@ const Contact = () => {
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
             </g>
           </svg>
-          <input type="email" placeholder="e.g, johndoe@mail.com" required />
+          <input type="email" placeholder="e.g, johndoe@mail.com" />
         </label>
         <div className="validator-hint hidden">Enter valid email address</div>
       </div>
       <div className="flex flex-col gap-1">
         <span className="text-sm">Feedback</span>
-        <textarea
-          className="textarea w-full rounded-md border-1"
-          placeholder="Enter your feedback here"
-        ></textarea>
-        <div className="validator-hint hidden">Enter valid email address</div>
+        <label className="input w-full rounded-md border-1">
+          <input type="text" placeholder="Enter your feedback here..." />
+        </label>
       </div>
       <button className="btn btn-md w-full shadow-sm rounded-md bg-blue-400 flex items-center border-blue-400 dark:text-white transform transition-transform duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-md">
         <span>Send Message</span>
