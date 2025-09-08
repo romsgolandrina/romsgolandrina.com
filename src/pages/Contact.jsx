@@ -1,7 +1,7 @@
 import React from "react";
 import LinkedIn from "../assets/logo/linkedin.png";
 import Github from "../assets/logo/github.png";
-import Instagram from "../assets/logo/Instagram.png";
+import Instagram from "../assets/logo/instagram.png";
 
 const Contact = () => {
   const socialLinks = [
