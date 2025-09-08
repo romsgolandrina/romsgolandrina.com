@@ -106,7 +106,7 @@ const Bentogrids = () => {
         <Projects />
       </div>
       {/* Contacts & Certificates */}
-      <div className="w-full h-[400px] flex flex-row gap-3">
+      <div className="w-full h-[470px] flex flex-row gap-3">
         {/* Certificate */}
         <div className="w-[32%] h-full bg-base-100 border-1 border-base-300 rounded-xl shadow-sm hover:shadow-md transition-shadow dark:bg-base-200 flex flex-col px-6 py-4 gap-3">
           <div className="w-full flex flex-row items-center gap-2">
@@ -117,7 +117,7 @@ const Bentogrids = () => {
         </div>
 
         {/* Contact */}
-        <div className="w-[68%] h-full bg-base-100 border-1 border-base-300 rounded-xl shadow-sm hover:shadow-md transition-shadow dark:bg-base-200 flex flex-col px-6 py-4">
+        <div className="w-[68%] h-full bg-base-100 border-1 border-base-300 rounded-xl shadow-sm hover:shadow-md transition-shadow dark:bg-base-200 flex flex-col px-6 py-4 gap-3">
           <div className="w-full flex flex-row items-center gap-2">
             <LuPhone size={18} />
             <span className="text-2xl font-semibold">Connect</span>

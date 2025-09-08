@@ -2,8 +2,19 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Main from "./pages/MainPage";
 import MoreProjects from "./pages/MoreProjects";
+import Loader from "./components/loader/loader";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem("theme") || "winter";
   });
@@ -19,18 +30,22 @@ function App() {
   return (
     <>
       <div className="font-roboto">
-        <Router>
-          {theme === "dracula"}
+        {loading ? (
+          <Loader />
+        ) : (
+          <Router>
+            {theme === "dracula"}
 
-          <Routes>
-            <Route
-              path="/"
-              element={<Main theme={theme} setTheme={setTheme} />}
-            ></Route>
-            <Route path="/projects" element={<MoreProjects />}></Route>
-            {/* <Route path="/certificates" element={<MoreCerts />}></Route> */}
-          </Routes>
-        </Router>
+            <Routes>
+              <Route
+                path="/"
+                element={<Main theme={theme} setTheme={setTheme} />}
+              ></Route>
+              <Route path="/projects" element={<MoreProjects />}></Route>
+              {/* <Route path="/certificates" element={<MoreCerts />}></Route> */}
+            </Routes>
+          </Router>
+        )}
       </div>
     </>
   );

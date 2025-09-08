@@ -7,7 +7,7 @@ import Bentogrids from "./Bentogrids";
 const MainPage = ({ theme, setTheme }) => {
   return (
     <div className="max-w-screen-lg mx-auto py-8 transition-all duration-500 ease-in-out">
-      <div className="w-full flex flex-col gap-4">
+      <div className="w-full flex flex-col gap-8">
         <div className="w-full h-auto flex flex-row gap-4 items-center">
           {/* Profile Picture */}
           <div className="w-[19%]">
@@ -99,6 +99,14 @@ const MainPage = ({ theme, setTheme }) => {
         {/* Bento Grids */}
         <div>
           <Bentogrids />
+        </div>
+      </div>
+      <div className="mt-50 mb-10">
+        <h1 className="border border-gray-400/40"></h1>
+        <div className="flex flex-row mt-8">
+          <h2 className="text-sm font-medium">
+            &#169;2025 Roms Golandrina. All rights reserved.
+          </h2>
         </div>
       </div>
     </div>
