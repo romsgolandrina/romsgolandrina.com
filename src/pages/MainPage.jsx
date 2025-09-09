@@ -23,13 +23,14 @@ const MainPage = ({ theme, setTheme }) => {
                 Roms Golandrina{" "}
                 <img src={verified} alt="check" className="w-5 h-5" />
               </h1>
-              <label className="toggle text-base-content">
+              <label className="toggle text-base-content cursor-none">
                 <input
                   type="checkbox"
                   onChange={(e) =>
                     setTheme(e.target.checked ? "dracula" : "pastel")
                   }
                   checked={theme === "dracula"}
+                  className="cursor-none"
                 />
                 <svg
                   aria-label="sun"
@@ -92,7 +93,7 @@ const MainPage = ({ theme, setTheme }) => {
                 rel="noopener noreferrer"
                 title="Send an email to romsyaintmad@gmail.com"
                 aria-label="Send an email to romsyaintmad@gmail.com"
-                className="btn btn-sm shadow-sm rounded-md bg-blue-400 flex items-center border-blue-400 dark:text-white transform transition-transform duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-md"
+                className="btn btn-sm shadow-sm rounded-md bg-blue-400 flex items-center border-blue-400 dark:text-white transform transition-transform duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-md cursor-none"
               >
                 <div className="xl:text-sm text-[10px] xl:font-medium flex flex-row gap-2 items-center">
                   <LuMail size={18} />
@@ -102,7 +103,7 @@ const MainPage = ({ theme, setTheme }) => {
               <a
                 href={resumepdf}
                 download="Jhon-Rommel-Golandrina_RESUME-2025.pdf"
-                className="btn btn-sm shadow-sm rounded-md flex items-center bg-transparent border-1 border-neutral-400 transform transition-transform duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-md"
+                className="btn btn-sm shadow-sm rounded-md flex items-center bg-transparent border-1 border-neutral-400 transform transition-transform duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-md cursor-none"
               >
                 <div className="xl:text-sm text-[10px] xl:font-medium flex flex-row gap-2 items-center">
                   <LuDownload size={18} />

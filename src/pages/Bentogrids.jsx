@@ -305,7 +305,7 @@ const Bentogrids = () => {
 
       {/* Project Card */}
       <Card className="md:col-span-6 border-base-300 shadow-sm hover:shadow-md transition-shadow dark:bg-base-200">
-        <CardContent className="space-y-4">
+        <CardContent className="space-y-4 cursor-none">
           <div className="flex flex-row justify-between">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -332,7 +332,7 @@ const Bentogrids = () => {
                 viewport={{ once: true, amount: 0.3 }}
                 className="block"
               >
-                <Card className="transform transition-transform duration-300 ease-in-out hover:-translate-y-2 border-base-300 shadow-sm hover:shadow-md hover:bg-base-300 cursor-pointer">
+                <Card className="transform transition-transform duration-300 ease-in-out hover:-translate-y-2 border-base-300 shadow-sm hover:shadow-md hover:bg-base-300 cursor-none">
                   <CardContent className="flex flex-col space-y-2">
                     <img
                       src={project.image}
@@ -400,14 +400,14 @@ const Bentogrids = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="flex flex-col justify-between min-h-26 border-1 border-base-300 shadow-sm p-4 rounded-[10px] transform transition-transform duration-300 ease-in-out hover:shadow-md hover:bg-base-300 hover:-translate-y-1.5 cursor-pointer"
+                className="flex flex-col justify-between min-h-26 border-1 border-base-300 shadow-sm p-4 rounded-[10px] transform transition-transform duration-300 ease-in-out hover:shadow-md hover:bg-base-300 hover:-translate-y-1.5 cursor-none"
               >
                 <div>
                   <h1 className="font-bold tracking-wide leading-5 mb-2">
                     {certificate.title}
                   </h1>
                 </div>
-                <div className="flex flex-row justify-end items-center gap-1 cursor-pointer">
+                <div className="flex flex-row justify-end items-center gap-1 cursor-none">
                   <div className="text-xs">View</div>
                   <svg
                     width="16"
@@ -477,7 +477,7 @@ const Bentogrids = () => {
                 name="email"
                 required
                 aria-required="true"
-                className="bg-base-300 border-0 mt-1 text-black"
+                className="bg-base-300 border-0 mt-1 text-black cursor-none"
               />
             </motion.div>
 
@@ -496,7 +496,7 @@ const Bentogrids = () => {
                 name="feedback"
                 required
                 aria-required="true"
-                className="bg-base-300 border-0 mt-1 text-black"
+                className="bg-base-300 border-0 mt-1 text-black cursor-none"
               />
             </motion.div>
             <motion.div
@@ -530,7 +530,7 @@ const Bentogrids = () => {
                   key={index}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center p-2 border-1 border-base-300 rounded-lg w-1/3 shadow-sm transform transition-transform duration-300 ease-in-out hover:shadow-md hover:bg-base-300 hover:-translate-y-0.5"
+                  className="flex items-center justify-center p-2 border-1 border-base-300 rounded-lg w-1/3 shadow-sm transform transition-transform duration-300 ease-in-out hover:shadow-md hover:bg-base-300 hover:-translate-y-0.5 cursor-none"
                 >
                   <img src={socialLinks.logo} alt="LinkedIn" className="h-8" />
                 </a>
