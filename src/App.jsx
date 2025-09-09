@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Main from "./pages/MainPage";
 import MoreProjects from "./pages/MoreProjects";
 import Loader from "./components/loader/loader";
+import SmoothCursor from "./components/ui/SmoothCursor";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,8 +35,7 @@ function App() {
           <Loader />
         ) : (
           <Router>
-            {theme === "dracula"}
-
+            <SmoothCursor />
             <Routes>
               <Route
                 path="/"
