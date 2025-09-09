@@ -1,4 +1,5 @@
 import React from "react";
+import { LuBookOpenText } from "react-icons/lu";
 
 const tech = [
   { name: "HTML5", color: "E34F26", logo: "html5", logoColor: "white" },
@@ -52,15 +53,21 @@ const makeBadgeUrl = (t) => {
 
 export default function TechBadges() {
   return (
-    <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-      {tech.map((t) => (
-        <img
-          key={t.name}
-          src={makeBadgeUrl(t)}
-          alt={t.name}
-          style={{ height: "24px" }}
-        />
-      ))}
+    <div className="flex flex-col space-y-4">
+      <div className="flex gap-2 items-center">
+        <LuBookOpenText size={18} />
+        <span className="text-2xl font-semibold">Tech Stack</span>
+      </div>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+        {tech.map((t) => (
+          <img
+            key={t.name}
+            src={makeBadgeUrl(t)}
+            alt={t.name}
+            style={{ height: "24px" }}
+          />
+        ))}
+      </div>
     </div>
   );
 }
