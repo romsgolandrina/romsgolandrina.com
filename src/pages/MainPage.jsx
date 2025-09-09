@@ -113,7 +113,7 @@ const MainPage = ({ theme, setTheme }) => {
         </div>
       </div>
       <div className="mt-50 mb-10">
-        <h1 className="border border-gray-400/40"></h1>
+        <h1 className="border border-base-300"></h1>
         <div className="flex flex-row mt-8">
           <h2 className="text-sm font-medium">
             &#169;2025 Roms Golandrina. All rights reserved.
