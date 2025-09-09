@@ -27,7 +27,7 @@ const MainPage = ({ theme, setTheme }) => {
                 <input
                   type="checkbox"
                   onChange={(e) =>
-                    setTheme(e.target.checked ? "dracula" : "nord")
+                    setTheme(e.target.checked ? "dracula" : "pastel")
                   }
                   checked={theme === "dracula"}
                 />
@@ -87,11 +87,11 @@ const MainPage = ({ theme, setTheme }) => {
 
             <div className="grid grid-cols-2 grid-rows-1 gap-2 md:w-2/5 mt-2 ">
               <a
-                href="mailto:alysaemilio@gmail.com"
+                href="mailto:romsyaintmad@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Send an email to alysaemilio@gmail.com"
-                aria-label="Send an email to alysaemilio@gmail.com"
+                title="Send an email to romsyaintmad@gmail.com"
+                aria-label="Send an email to romsyaintmad@gmail.com"
                 className="btn btn-sm shadow-sm rounded-md bg-blue-400 flex items-center border-blue-400 dark:text-white transform transition-transform duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-md"
               >
                 <div className="xl:text-sm text-[10px] xl:font-medium flex flex-row gap-2 items-center">
