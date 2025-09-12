@@ -457,8 +457,8 @@ const Bentogrids = () => {
             viewport={{ once: true, amount: 0.3 }}
             className="text-sm leading-6 mb-4"
           >
-            I'm currently looking for job opportunities. If you have any
-            suggestions or feedback, I’d be happy to hear from you!
+            Open to new opportunities in front-end development. Always eager to
+            learn, collaborate, and take on new challenges—let’s connect!
           </motion.p>
 
           <form className="space-y-4">
