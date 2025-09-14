@@ -35,7 +35,10 @@ function App() {
           <Loader />
         ) : (
           <Router>
-            <SmoothCursor />
+            <SmoothCursor
+              size={20}
+              color={theme === "pastel" ? "black" : "#282A36"}
+            />
             <Routes>
               <Route
                 path="/"
