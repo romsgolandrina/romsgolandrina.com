@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../assets/files/roms.jpg";
+import profile from "../assets/files/roms2.jpg";
 import verified from "../assets/logo/verified.svg";
 import { LuMapPin, LuMail, LuDownload } from "react-icons/lu";
 import Bentogrids from "./Bentogrids";
