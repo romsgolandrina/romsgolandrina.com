@@ -211,6 +211,32 @@ const Bentogrids = () => {
 
                 <div className="flex flex-row justify-between items-center -mt-3">
                   <strong className="text-[14px]">
+                    Front-end Developer
+                  </strong>
+                  <div className="text-[10px] outline-1  py-1 px-2 text-center rounded-sm">
+                    Present
+                  </div>
+                </div>
+                <h1 className="text-xs mt-1">Pacific Data Resources (Asia) Inc.</h1>
+                <p className="mt-4 text-sm leading-5">
+                  Developed front-end components for their new projects and maintain existing projects.
+                </p>
+              </motion.li>
+
+              <motion.li
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true, amount: 0.3 }}
+                className="relative"
+              >
+                <span className="relative flex size-3 -left-[30px] top-1">
+                  <span className=" absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
+                  <span className="relative inline-flex size-3 rounded-full bg-sky-500"></span>
+                </span>
+
+                <div className="flex flex-row justify-between items-center -mt-3">
+                  <strong className="text-[14px]">
                     Junior Front-end Developer
                   </strong>
                   <div className="text-[10px] outline-1  py-1 px-2 text-center rounded-sm">
